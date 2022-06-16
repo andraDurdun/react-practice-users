@@ -1,0 +1,18 @@
+.new-user {
+    border-radius: 25px;
+    border: 2px solid white;
+    padding: 20px;
+    width: 700px;
+    height: auto;
+    background-color: white;
+    margin: 2rem auto;
+}
+
+.new-user button {
+    font: inherit;
+    cursor: pointer;
+    padding: 5px 10px;
+    border: 1px solid #40005d;
+    background-color: #40005d;
+    color: white;
+}
