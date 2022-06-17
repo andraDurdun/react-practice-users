@@ -1,21 +1,13 @@
 import "./UserList.css";
 import UserEntry from "./UserEntry";
-import { useState } from "react";
 
-const UserList = () => {
-  const initialUsers = [
-    { username: "Andra", age: 29 },
-    { username: "Alex", age: 30 },
-    { username: "Roxi", age: 28 },
-  ];
-
-  const [users, setUsers] = useState(initialUsers);
+const UserList = (props) => {
 
   return (
-    <div className="user-list">
+    <div className={`user-list ${props.className}`}>
       <ul>
-        {users.map((user) => (
-          <UserEntry user={user} />
+        {props.users.map((user) => (
+          <UserEntry key={user.key} user={user} />
         ))}
       </ul>
     </div>

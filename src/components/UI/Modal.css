@@ -1,0 +1,39 @@
+.modal_container {
+  border-radius: 25px;
+  width: 700px;
+  height: 200px;
+  background-color: white;
+  margin: 2rem auto;
+  z-index: 1;
+  position: absolute;
+  left: 50%;
+  top: 30%;
+  transform: translate(-50%, -50%);
+}
+
+.modal_container_header {
+  height: 50px;
+  line-height: 50px;
+  background-color: #40005d;
+  border-top-left-radius: 23px;
+  border-top-right-radius: 23px;
+  font-weight: bold;
+  font-size: 25px;
+  color: white;
+  padding-left: 20px;
+}
+
+.modal_container_text {
+    padding: 20px;
+}
+
+.modal_container button {
+  font: inherit;
+  cursor: pointer;
+  padding: 5px 10px;
+  border: 1px solid #40005d;
+  background-color: #40005d;
+  color: white;
+  float: right;
+  margin: 20px;
+}

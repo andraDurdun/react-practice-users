@@ -1,14 +1,18 @@
 import NewUserForm from "./NewUserForm";
-import "./NewUser.css"
+import "./NewUser.css";
 
-const NewUser = () => {
-    return (
-        <div className="new-user">
-            <NewUserForm/>
-            <button type="submit">Add User</button>
-        </div>
-    )
-
-}
+const NewUser = (props) => {
+  return (
+    <div className={props.className}>
+      <div className="new-user">
+        <NewUserForm
+          addNewUser={props.addNewUser}
+          isInvalidInput={props.isInvalidInput}
+          setWarningMessage={props.setWarningMessage}
+        />
+      </div>
+    </div>
+  );
+};
 
 export default NewUser;
